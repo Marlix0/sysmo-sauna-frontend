@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@font-face {
+  font-family: Inter;
+  src: url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+}
+.App {
+  font-family: Inter;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#Footer-top{
+  width: 100%;
+  height: 299px;
+  gap: 120.76px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Footer-content{
+  display: flex;
+  width: 975.4037475585938px;
+  height: 250px;
+  gap: 290.63px;  
+}
+#Footer-slogan{
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 23.89px;
+  line-height: 36.49px;
+  letter-spacing: 0%;
+  width: 331.771728515625px;
+  height: 140.63543701171875px;
+  gap: 6.64px;
+}
+#logoBalia{
+  width: 93;
+  height: 61;
+}
+#Footer-contact{
+  width: 353px;
+  height: 250px;
+  gap: 10px;
+}
+.contact-div{
+  width: 353;
+  height: 42;  
+}
+#Footer-contact > .contact-div > p{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 21.23px;
+  line-height: 41.14px;
+  letter-spacing: 0%;  
+  width: 185;
+  height: 42;
+  left: 46px;  
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#Footer-contact > .contact-div > p > img{
+  width: 32;
+  height: 32;
+  top: 5px;  
+}
+#Footer-copyright{
+  background-color: #D04823;
+  color: #FFFFFF;
+  height: 105.7751235961914px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 23.89px;
+  line-height: 36.49px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  text-align: center;
+}
