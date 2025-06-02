@@ -6,9 +6,41 @@ import eyeIcon from './Vector.png';
 
 function App() {
   const [showPassword, setShowPassword] = useState(false);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState(null);
+  const [success, setSuccess] = useState(null);
 
   const togglePassword = () => {
     setShowPassword(prev => !prev);
+  };
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    setError(null);
+    setSuccess(null);
+
+    try {
+      const response = await fetch('https://test1.sysmo.pl/api/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message || 'Błąd logowania');
+      }
+
+      setSuccess('Zalogowano!');
+
+      console.log('Zalogowano:', data);
+    } catch (err) {
+      setError(err.message);
+    }
   };
 
   return (
@@ -19,13 +51,15 @@ function App() {
       <div className="form-container">
         <h2>Zaloguj się</h2>
         <p><small>Nie masz konta? <a href="#">Utwórz teraz</a></small></p>
-        <form>
+        <form onSubmit={handleLogin}>
           <label className="name">Email</label>
           <input
             type="email"
             placeholder="Email"
             required
             className="input"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
           <label className="name">Hasło</label>
           <div className="password-input">
@@ -34,6 +68,8 @@ function App() {
               placeholder="Hasło"
               required
               className="input"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
             <img
               src={eyeIcon}
@@ -44,11 +80,15 @@ function App() {
             />
           </div>
           <button type="submit">Zaloguj się</button>
+          {success && <p className="error">{success}</p>}
+          {error && <p className="error">{error}</p>}
         </form>
         <a href="#" className="forgot">Zapomniałeś hasła?</a>
       </div>
     </div>
   );
 }
+
+
 
 export default App;
