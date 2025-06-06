@@ -109,3 +109,8 @@ button[type="submit"] {
   color: rgba(208, 72, 35, 1);
   font-size: 9px;
 }
+
+.error{
+  color: darkred;
+  font-size: 10px;
+}

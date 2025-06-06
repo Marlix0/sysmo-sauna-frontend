@@ -23,6 +23,7 @@ function App() {
     try {
       const response = await fetch('https://test1.sysmo.pl/api/login', {
         method: 'POST',
+        credentials: 'include',
         headers: {
           'Content-Type': 'application/json',
         },
@@ -32,7 +33,7 @@ function App() {
       const data = await response.json();
 
       if (!response.ok) {
-        throw new Error(data.message || 'Błąd logowania');
+        throw new Error(data.message || 'Niepoprawny e-mail lub hasło');
       }
 
       setSuccess('Zalogowano!');
