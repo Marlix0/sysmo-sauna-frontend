@@ -17,23 +17,31 @@
   width: 100%;
   height: 93px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   padding-top: 16px;
 }
 #header-left{
-  height: 93px;
-
+  width: 93px;
+  height: 61px;
+  position: relative;
+  left: 220px;
 }
 #header-center{
-  width: 577px;
-  height: 32px;
+  width: 30%;
+  height: 93px;
   gap: 24px;
+  position: relative;
+  top: 10px;
+  left: 228.5px;
+}
+#header-tel{
+  margin-right: 10px;
 }
 #contact-phone{
   width: 167px;
   height: 24px;
   position: relative;
-  left: 36px;
   font-family: Source Sans Pro,sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -41,6 +49,7 @@
   letter-spacing: 0%;
   text-align: center;
   color: #FFFFFF;
+  margin-right: 20px;
 }
 #contact-email{
   width: 306px;
@@ -53,9 +62,63 @@
   letter-spacing: 0%;
   text-align: center;
   color: #FFFFFF;
+  margin-left: 20px;
 }
 #header-right{
-
+  width: 353px;
+  height: 93px;
+  gap: 30px;
+  position: relative;
+  right: 50px;
+  top: 10px;
+}
+#add-notice{
+  position: relative;
+  right: 30px;
+  width: 164px;
+  height: 20px;
+  gap: 8px;
+  font-family: Source Sans Pro,sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+#add-notice > img{
+  margin-right: 10px;
+}
+#login-btn{
+  gap: 10px;
+  padding-top: 14px;
+  padding-right: 24px;
+  padding-bottom: 14px;
+  padding-left: 24px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 40px 0px #D04823;
+  box-shadow: 0px 5px 10px 0px #D04823;
+  border: none;
+  font-family: Source Sans Pro,sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #D04823;
+  transition: 0.2s;
+}
+#login-btn > img{
+  margin-right: 10px;
+}
+#login-btn:hover{
+  background: #f76c45;
+  color: #FFFFFF;
+  box-shadow: 0px 20px 40px 0px #FFFFFF;
+  box-shadow: 0px 5px 10px 0px #FFFFFF;
+  transition: 0.2s;
 }
 /*MAIN*/
 #App-content{
@@ -68,6 +131,8 @@
   width: 1169px;
   height: 735px;
   position: relative;
+  display: flex;
+  flex-direction: row;
   left: 436px;
   gap: 100px;
   padding-top: 151px;
@@ -81,8 +146,8 @@
   position: relative;
   width: 461px;
   height: 510.4808349609375px;
-  top: 93px;
-  left: 708px;
+  left: 200px;
+  top: -100px;
   display: flex;
   flex-direction: column;
 }
@@ -143,6 +208,60 @@
   letter-spacing: 0.36px;
   padding-left: 17.94px;
 }
+.togglePassword{
+  width: 11.062990188598633px;
+  height: 7.59896993637085px;
+  position: relative;
+  top: -34px;
+  left: 415px;
+  border-width: 1.08px;
+}
+.inputErrors{
+  width: 398.59625244140625px;
+  height: 16px;
+  top: 76.79px;
+  left: 8.92px;
+  font-family: Source Sans Pro,sans-serif;
+  font-weight: 400;
+  font-size: 8.61px;
+  line-height: 15.79px;
+  letter-spacing: 0%;
+  color: #FF0C3E;
+}
+.passwordErrors{
+  width: 398.59625244140625px;
+  height: 16px;
+  position: relative;
+  top: -20px;
+  font-family: Source Sans Pro,sans-serif;
+  font-weight: 400;
+  font-size: 8.61px;
+  line-height: 15.79px;
+  letter-spacing: 0%;
+  color: #FF0C3E;
+}
+#register-button{
+  position: relative;
+  top: 20px;
+  width: 440px;
+  height: 50px;
+  border-radius: 8.61px;
+  border: 1.44px solid #D04823;
+  background-color: #D04823;
+  backdrop-filter: blur(2.8705074787139893px);
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 700;
+  font-size: 15.79px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #FFFFFF;
+  transition: 0.2s;
+}
+#register-button:hover{
+  transition: 0.2s;
+  background-color: #f76c45;
+}
 /*FOOTER*/
 #Footer-top{
   width: 100%;
@@ -167,6 +286,7 @@
   width: 331.771728515625px;
   height: 140.63543701171875px;
   gap: 6.64px;
+  text-align: left;
 }
 #logoBalia{
   width: 93;
@@ -179,7 +299,8 @@
 }
 .contact-div{
   width: 353;
-  height: 42;  
+  height: 42;
+  margin-top: 10px;
 }
 #Footer-contact > .contact-div > p{
   font-family: Inter;
@@ -192,6 +313,7 @@
   left: 46px;  
   margin-top: 0;
   margin-bottom: 0;
+  text-align: left;
 }
 #Footer-contact > .contact-div > p > img{
   width: 32;
@@ -202,13 +324,18 @@
   background-color: #D04823;
   color: #FFFFFF;
   height: 105.7751235961914px;
-  width: 100%;
+  width: 1920px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   font-size: 23.89px;
   line-height: 36.49px;
   font-weight: 400;
   letter-spacing: 0%;
   text-align: center;
+}
+#Footer-copyright > p{
+  width: 87px;
+  position: relative;
+  left: 936px
 }
