@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@font-face {
+  font-family: Inter;
+  src: url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+}
+@font-face {
+  font-family: Source Sans Pro;
+  src: url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+}
+.App {
+  font-family: Inter;
+}
+/*HEADER*/
+#App-header{
+  background-color: #757575;
+  width: 100%;
+  height: 93px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+#header-left{
+  width: 93px;
+  height: 61px;
+  position: relative;
+  left: 220px;
+}
+#header-center{
+  width: 30%;
+  height: 93px;
+  gap: 24px;
+  position: relative;
+  top: 10px;
+  left: 228.5px;
+}
+#header-tel{
+  margin-right: 10px;
+}
+#contact-phone{
+  width: 167px;
+  height: 24px;
+  position: relative;
+  font-family: Source Sans Pro,sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-right: 20px;
+}
+#contact-email{
+  width: 306px;
+  height: 24px;
+  position: relative;
+  font-family: Source Sans Pro,sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-left: 20px;
+}
+#header-right{
+  width: 353px;
+  height: 93px;
+  gap: 30px;
+  position: relative;
+  right: 50px;
+  top: 10px;
+}
+#add-notice{
+  position: relative;
+  right: 30px;
+  width: 164px;
+  height: 20px;
+  gap: 8px;
+  font-family: Source Sans Pro,sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+#add-notice > img{
+  margin-right: 10px;
+}
+#login-btn{
+  gap: 10px;
+  padding-top: 14px;
+  padding-right: 24px;
+  padding-bottom: 14px;
+  padding-left: 24px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 40px 0px #D04823;
+  box-shadow: 0px 5px 10px 0px #D04823;
+  border: none;
+  font-family: Source Sans Pro,sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #D04823;
+  transition: 0.2s;
+}
+#login-btn > img{
+  margin-right: 10px;
+}
+#login-btn:hover{
+  background: #f76c45;
+  color: #FFFFFF;
+  box-shadow: 0px 20px 40px 0px #FFFFFF;
+  box-shadow: 0px 5px 10px 0px #FFFFFF;
+  transition: 0.2s;
+}
+/*MAIN*/
+#App-content{
+  width: 100%;
+  height: 987px;
+  background-color: #FFFFFF;
+  display: flex;
+}
+#Register-content{
+  width: 1169px;
+  height: 735px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  left: 436px;
+  gap: 100px;
+  padding-top: 151px;
+  padding-bottom: 151px;
+}
+#Sauna-pic{
+  width: 400.5019226074219px;
+  height: 411.2001647949219px;
+}
+#Register-div{
+  position: relative;
+  width: 461px;
+  height: 510.4808349609375px;
+  left: 200px;
+  top: -100px;
+  display: flex;
+  flex-direction: column;
+}
+#Register-title{
+  width: 461px;
+  font-family: Source Sans Pro,sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #757575;
+}
+#HaveAccount{
+  width: 203px;
+  height: 17px;
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 400;
+  font-size: 11.48px;
+  line-height: 17.22px;
+  letter-spacing: 0.36px;
+  vertical-align: middle;
+  color: #757575;
+  margin-left: 20px;
+}
+#HaveAccount > a{
+  color: #D04823;
+}
+/*INPUTS*/
+.TextField-container{
+  width: 418.2140197753906px;
+  height: 96.16200256347656px;
+  top: 191.56px;
+  left: 708px;
+
+}
+.TextField-container > label{
+  width: 336.5670166015625px;
+  height: 28.705074310302734px;
+  padding-left: 8.61px;
+  font-family: Source Sans Pro,sans-serif;
+  font-weight: 400;
+  font-size: 8.61px;
+  line-height: 15.79px;
+  letter-spacing: 0%;
+  color: #D04823;
+}
+.TextFields{
+  width: 418.2140197753906px;
+  height: 43.057613372802734px;
+  top: 34.45px;
+  border-radius: 8.61px;
+  border: 1.44px solid #D04823;
+  color: #D04823;
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 400;
+  font-size: 11.48px;
+  line-height: 17.22px;
+  letter-spacing: 0.36px;
+  padding-left: 17.94px;
+}
+.togglePassword{
+  width: 11.062990188598633px;
+  height: 7.59896993637085px;
+  position: relative;
+  top: -34px;
+  left: 415px;
+  border-width: 1.08px;
+}
+.inputErrors{
+  width: 398.59625244140625px;
+  height: 16px;
+  top: 76.79px;
+  left: 8.92px;
+  font-family: Source Sans Pro,sans-serif;
+  font-weight: 400;
+  font-size: 8.61px;
+  line-height: 15.79px;
+  letter-spacing: 0%;
+  color: #FF0C3E;
+}
+.passwordErrors{
+  width: 398.59625244140625px;
+  height: 16px;
+  position: relative;
+  top: -20px;
+  font-family: Source Sans Pro,sans-serif;
+  font-weight: 400;
+  font-size: 8.61px;
+  line-height: 15.79px;
+  letter-spacing: 0%;
+  color: #FF0C3E;
+}
+#register-button{
+  position: relative;
+  top: 20px;
+  width: 440px;
+  height: 50px;
+  border-radius: 8.61px;
+  border: 1.44px solid #D04823;
+  background-color: #D04823;
+  backdrop-filter: blur(2.8705074787139893px);
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 700;
+  font-size: 15.79px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #FFFFFF;
+  transition: 0.2s;
+}
+#register-button:hover{
+  transition: 0.2s;
+  background-color: #f76c45;
+}
+/*FOOTER*/
+#Footer-top{
+  width: 100%;
+  height: 299px;
+  gap: 120.76px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Footer-content{
+  display: flex;
+  width: 975.4037475585938px;
+  height: 250px;
+  gap: 290.63px;  
+}
+#Footer-slogan{
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 23.89px;
+  line-height: 36.49px;
+  letter-spacing: 0%;
+  width: 331.771728515625px;
+  height: 140.63543701171875px;
+  gap: 6.64px;
+  text-align: left;
+}
+#logoBalia{
+  width: 93;
+  height: 61;
+}
+#Footer-contact{
+  width: 353px;
+  height: 250px;
+  gap: 10px;
+}
+.contact-div{
+  width: 353;
+  height: 42;
+  margin-top: 10px;
+}
+#Footer-contact > .contact-div > p{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 21.23px;
+  line-height: 41.14px;
+  letter-spacing: 0%;  
+  width: 185;
+  height: 42;
+  left: 46px;  
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: left;
+}
+#Footer-contact > .contact-div > p > img{
+  width: 32;
+  height: 32;
+  top: 5px;  
+}
+#Footer-copyright{
+  background-color: #D04823;
+  color: #FFFFFF;
+  height: 105.7751235961914px;
+  width: 1920px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 23.89px;
+  line-height: 36.49px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  text-align: center;
+}
+#Footer-copyright > p{
+  width: 87px;
+  position: relative;
+  left: 936px
+}
