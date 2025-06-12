@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+    font-family: Mulish;
+    src: url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+}
+@font-face {
+  font-family: Source Sans Pro;
+  src: url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+}
+@font-face {
+  font-family: Poppins;
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+}
+/*HEADER*/
+#Main-header{
+  width: 100%;
+  height: 93px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+#header-left{
+  width: 93px;
+  height: 61px;
+  position: relative;
+  left: 220px;
+}
+#header-center{
+  width: 30%;
+  height: 93px;
+  gap: 24px;
+  position: relative;
+  top: 10px;
+  left: 228.5px;
+}
+#header-tel{
+  margin-right: 10px;
+}
+#contact-phone{
+  width: 167px;
+  height: 24px;
+  position: relative;
+  font-family: Source Sans Pro,sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-right: 20px;
+}
+#contact-email{
+  width: 306px;
+  height: 24px;
+  position: relative;
+  font-family: Source Sans Pro,sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-left: 20px;
+}
+#header-right{
+  width: 353px;
+  height: 93px;
+  gap: 30px;
+  position: relative;
+  right: 50px;
+  top: 10px;
+}
+#add-notice{
+  position: relative;
+  right: 30px;
+  width: 164px;
+  height: 20px;
+  gap: 8px;
+  font-family: Source Sans Pro,sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+#add-notice > img{
+  margin-right: 10px;
+}
+#login-btn{
+  gap: 10px;
+  padding-top: 14px;
+  padding-right: 24px;
+  padding-bottom: 14px;
+  padding-left: 24px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 40px 0px #D04823;
+  box-shadow: 0px 5px 10px 0px #D04823;
+  border: none;
+  font-family: Source Sans Pro,sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #D04823;
+  transition: 0.2s;
+}
+#login-btn > img{
+  margin-right: 10px;
+}
+#login-btn:hover{
+  background: #f76c45;
+  color: #FFFFFF;
+  box-shadow: 0px 20px 40px 0px #FFFFFF;
+  box-shadow: 0px 5px 10px 0px #FFFFFF;
+  transition: 0.2s;
+}
+/*NOTICE SEARCH STUFF*/
+#sauna-background{
+  height: 987px;
+  background-size: cover;
+}
+#orderSearch{
+  width: 945px;
+  height: 466.00006103515625px;
+  gap: 15px;
+  border-radius: 16px;
+  position: relative;
+  left: 488px;
+  top: 160.72px;
+}
+#orderTitle{
+  width: 948px;
+  height: 88px;
+  font-family: Mulish;
+  font-weight: 700;
+  font-size: 88px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  box-shadow: 0px 27px 82px 0px #FFAE0047;
+  box-shadow: 0px 14px 15px 0px #FFAE0003;
+}
+#orderSubtitle{
+  width: 772px;
+  height: 26px;
+  font-family: Source Sans Pro,sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #DDBBA7;
+  position: relative;
+  left: 86.5px;
+  top: -25px;
+}
+#orderCard{
+  width: 858px;
+  height: 322.00006103515625px;
+  border-radius: 16px;
+  box-shadow: 0px 20px 40px 0px #D048234A;
+  box-shadow: 0px 5px 10px 0px #D0482342;
+  background-color: #FFFFFF;
+  position: relative;
+  left: 43.5px;
+}
+#orderCardTop{
+  width: 858px;
+  height: 86px;
+  gap: 8px;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+}
+#orderRV{
+  width: 196px;
+  height: 38px;
+  padding-top: 10px;
+  padding-right: 24px;
+  padding-bottom: 10px;
+  padding-left: 24px;
+  gap: 10px;
+  border-radius: 8px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #757575;
+}
+#orderRest{
+  width: 108px;
+  height: 38px;
+  padding-top: 10px;
+  padding-right: 24px;
+  padding-bottom: 10px;
+  padding-left: 24px;
+  gap: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #757575;
+}
+#orderMobileSauna{
+  width: 247px;
+  height: 38px;
+  padding-top: 10px;
+  padding-right: 24px;
+  padding-bottom: 10px;
+  padding-left: 24px;
+  gap: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #757575;
+}
+#orderCardBottom{
+  width: 858px;
+  height: 235.558349609375px;
+  justify-content: space-between;
+  padding: 24px;
+}
+#orderSearchInputs{
+  width: 404.5px;
+  height: 107.558349609375px;
+  position: relative;
+  top: -54px;
+  left: 206.75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0%;
+
+}
+#citySearch{
+  width: 404px;
+  height: 49px;
+  padding-top: 7px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  gap: 12px;
+  border-radius: 8px;
+  background: #F5F5F5;
+  border: none;
+}
+#dateSearch{
+  width: 404px;
+  height: 49px;
+  padding-top: 7px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  gap: 12px;
+  border-radius: 8px;
+  background: #F5F5F5;
+  border: none;
+  margin-top: 9.56px;
+}
+#orderSearchButton{
+  position: relative;
+  left: 322.5px;
+  bottom: 24px;
+  width: 173px;
+  height: 60px;
+  padding-top: 21px;
+  padding-right: 48px;
+  padding-bottom: 21px;
+  padding-left: 48px;
+  gap: 10px;
+  border-radius: 8px;
+  background: linear-gradient(0deg, #D04823, #D04823);
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border: none;
+  font-family: Source Sans Pro,sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+/*MAIN*/
+main{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#resultTitle{
+  width: 314px;
+  height: 88px;
+  position: relative;
+  left: 814px;
+  font-family: Mulish;
+  font-weight: 700;
+  font-size: 88px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #626161;
+}
+#orders{
+  width: calc(100%-794px);
+  height: 500px;
+  left: 397px;
+  position: relative;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flexbox;
+}
+.horizontalOrderContainer{
+  width: 100%;
+  height: 345.356201171875px;
+  gap: 40px;
+  display: flex;
+}
+.singleOrder{
+  width: 363.6536865234375px;
+  height: 345.356201171875px;
+  border-radius: 23.47px;
+  border-width: 0.98px;
+  background: #FEFEFE;
+  border: 0.98px solid #E3E3E1;
+  box-shadow: 0px 6px 11px 0px #0000001A;
+}
+.orderImg{
+  width: 363.6536865234375px;
+  height: 238.77743530273438px;
+  border-top-left-radius: 23.47px;
+  border-top-right-radius: 23.47px;
+}
+.orderLocation{
+  width: 290.32843017578125px;
+  height: 12.250815391540527px;
+  position: relative;
+  left: -70px;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 13.69px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #D04823;
+}
+.orderType{
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 15.65px;
+  position: relative;
+  left: -210px;
+  line-height: 21.52px;
+  letter-spacing: 0%;
+  color: #302D27;
+}
+.orderPrice{
+  width: 58.29896926879883px;
+  height: 22.82474136352539px;
+  position: relative;
+  top: 18.58px;
+  left: 287.12px;
+  gap: 9.78px;
+  border-radius: 39.12px;
+  padding-top: 3.91px;
+  padding-right: 15.65px;
+  padding-bottom: 3.91px;
+  padding-left: 15.65px;
+  z-index: 10;
+  background: #FF8F50;
+}
+/*FOOTER*/
+#Footer-top{
+  width: 100%;
+  height: 299px;
+  gap: 120.76px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Footer-content{
+  display: flex;
+  width: 975.4037475585938px;
+  height: 250px;
+  gap: 290.63px;  
+}
+#Footer-slogan{
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 23.89px;
+  line-height: 36.49px;
+  letter-spacing: 0%;
+  width: 331.771728515625px;
+  height: 140.63543701171875px;
+  gap: 6.64px;
+}
+#logoBalia{
+  width: 93px;
+  height: 61px;
+}
+#Footer-contact{
+  width: 353px;
+  height: 250px;
+  gap: 10px;
+}
+.contact-div{
+  width: 353px;
+  height: 42px;  
+}
+#Footer-contact > .contact-div > p{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 21.23px;
+  line-height: 41.14px;
+  letter-spacing: 0%;  
+  width: 185;
+  height: 42;
+  left: 46px;  
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#Footer-contact > .contact-div > p > img{
+  width: 32;
+  height: 32;
+  top: 5px;  
+}
+#Footer-copyright{
+  background-color: #D04823;
+  color: #FFFFFF;
+  height: 105.7751235961914px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 23.89px;
+  line-height: 36.49px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  text-align: center;
+}
