@@ -10,8 +10,30 @@ import plus from './../assets/plus-circle.png';
 import user from './../assets/user.png';
 import saunaBackground from "./../assets/saunaBackground.jpg";
 import saunaBg1 from './../assets/saunaBg1.jpg';
+import { useState, useEffect } from 'react';
 
 const MainPage = () =>{
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+      try {
+        const response = await fetch('https://test1.sysmo.pl/api/rentposts');
+        const data = await response.json();
+        setPosts(data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchPosts();
+  }, []);
+
+  const getImageUrl = (photo_id) => {
+    // Replace this with your actual image URL construction logic
+    return `https://test1.sysmo.pl/storage/photos/${photo_id}.jpg`;
+  };
+
     return(
         <div className="App">
         <title>Sauna</title>
@@ -26,7 +48,7 @@ const MainPage = () =>{
               </div>
               <div id="header-right">
                 <a href="#" id="add-notice"><img src={plus} alt="plus-icon" width="20px"/>Dodaj ogłoszenie</a>
-                <button id="login-btn"><img src={user} alt='user' />Zaloguj się</button>
+                <Link to="/login"><button id="login-btn"><img src={user} alt='user' />Zaloguj się</button></Link>
               </div>
             </header>
             <div id="orderSearch">
@@ -53,23 +75,14 @@ const MainPage = () =>{
             <main>
               <h1 id="resultTitle">Wyniki:</h1>
               <div id="orders">
-                <div className="horizontalOrderContainer">
-                  <div className="singleOrder">
+                {posts.map((post, index) => (
+                  <Link to={"/saunaPost"}>
+                  <div className="singleOrder" key={index}>
                     <img src={saunaBg1} className="orderImg" />
                     <p className="orderLocation">Poznań, Polska</p>
-                    <p className="orderType">Sauna</p>
-                  </div>
-                  <div className="singleOrder">
-                    <img src={saunaBg1} className="orderImg" />
-                    <p className="orderLocation">Poznań, Polska</p>
-                    <p className="orderType">Sauna</p>
-                  </div>
-                  <div className="singleOrder">
-                    <img src={saunaBg1} className="orderImg" />
-                    <p className="orderLocation">Poznań, Polska</p>
-                    <p className="orderType">Sauna</p>
-                  </div>
-                </div>
+                    <p className="orderType">{post.title}</p>
+                  </div></Link>
+                ))}
               </div>
             </main>
             <footer className='App-footer'>
